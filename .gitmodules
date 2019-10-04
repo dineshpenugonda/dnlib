@@ -1,0 +1,3 @@
+[submodule "projects/eazy-ui-pack"]
+	path = projects/eazy-ui-pack
+	url = git@github.com:dineshpenugonda/easzyUiPack
