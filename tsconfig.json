@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "eazy-ui-pack": [
+        "dist/eazy-ui-pack"
+      ],
+      "eazy-ui-pack/*": [
+        "dist/eazy-ui-pack/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

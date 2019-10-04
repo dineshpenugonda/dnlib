@@ -124,6 +124,41 @@
           }
         }
       }
+    },
+    "eazyUiPack": {
+      "projectType": "library",
+      "root": "projects/eazy-ui-pack",
+      "sourceRoot": "projects/eazy-ui-pack/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/eazy-ui-pack/tsconfig.lib.json",
+            "project": "projects/eazy-ui-pack/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/eazy-ui-pack/src/test.ts",
+            "tsConfig": "projects/eazy-ui-pack/tsconfig.spec.json",
+            "karmaConfig": "projects/eazy-ui-pack/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/eazy-ui-pack/tsconfig.lib.json",
+              "projects/eazy-ui-pack/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "dnlib"
 }
